@@ -57,6 +57,9 @@ dunst -config $HOME/.config/bspwm/dunstrc &
 ksuperkey -e 'Super_L=Alt_L|F1' &
 ksuperkey -e 'Super_R=Alt_L|F1' &
 
+# Mouse wheel speed for my browser
+imwheel
+
 # polkit agent
 #if [[ ! `pidof polkit-gnome-authentication-agent-1` ]]; then
 #    /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
