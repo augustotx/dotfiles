@@ -1,0 +1,67 @@
+[global/wm]
+include-file = $HOME/.config/bspwm/polybar/colors
+include-file = $HOME/.config/bspwm/polybar/modules
+include-file = $HOME/.config/bspwm/polybar/system
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[bar/leftbar]
+wm-restack = bspwm
+bottom = false
+fixed-center = true
+enable-ipc = true
+transparent = ${color.transparent}
+foreground = ${color.foreground}
+radius = 0
+font-0 = "JetBrains Mono:size=10.5;3"
+font-1 = "Symbols Nerd Font:size=14;4"
+modules-left= launcher cpu memory
+height = 30
+width = 20%
+border-size = 4
+border-color = ${color.transparent}
+line-size = 2
+offset-x = 0.4%
+offset-y = 0%
+
+[bar/centerbar]
+wm-restack = bspwm
+bottom = false
+fixed-center = true
+enable-ipc = true
+transparent = ${color.transparent}
+foreground = ${color.foreground}
+radius = 0
+font-0 = "JetBrains Mono:size=10.5;3"
+font-1 = "Symbols Nerd Font:size=14;4"
+modules-center = time
+height = 30
+width = 7%
+border-size = 4
+border-color = ${color.transparent}
+line-size = 2
+offset-x = 46,5%
+offset-y = 0%
+
+[bar/rightbar]
+wm-restack = bspwm
+bottom = false
+fixed-center = true
+enable-ipc = true
+transparent = ${color.transparent}
+foreground = ${color.foreground}
+radius = 0
+font-0 = "JetBrains Mono:size=10.5;3"
+font-1 = "Symbols Nerd Font:size=14;4"
+modules-right = battery volume brightness my-text-label bspwm powermenu
+height = 30
+width = 20%
+border-size = 4
+border-color = ${color.transparent}
+line-size = 2
+offset-x = 79,6%
+offset-y = 0%
+tray-position = right
+tray-transparent = ${color.transparent}
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_

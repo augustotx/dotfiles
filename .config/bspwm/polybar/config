@@ -1,0 +1,30 @@
+[global/wm]
+include-file = $HOME/.config/bspwm/polybar/colors
+include-file = $HOME/.config/bspwm/polybar/modules
+include-file = $HOME/.config/bspwm/polybar/system
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[bar/leftbar]
+wm-restack = bspwm
+bottom = true
+fixed-center = true
+enable-ipc = true
+background = ${color.transparent}
+foreground = ${color.foreground}
+radius = 0
+font-0 = "JetBrains Mono:size=10.5;3"
+font-1 = "Symbols Nerd Font:size=14;4"
+modules-left= launcher cpu memory
+modules-center= time
+modules-right= battery volume brightness my-text-label bspwm
+height = 30
+width = 100%
+border-size = 4
+border-color = ${color.transparent}
+line-size = 2
+offset-x = 0%
+offset-y = 0%
+tray-position = right
+tray-background = ${color.background}
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
