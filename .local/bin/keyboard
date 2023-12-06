@@ -1,0 +1,15 @@
+#!/bin/bash
+KB=$(setxkbmap -query | grep layout)
+KB2=$(setxkbmap -query | grep variant)
+
+if [[ "$KB2" == "variant:    dvorak" ]]; then
+		setxkbmap br
+		dunstify -u low --replace=69 BR-ABNT2
+elif [[ "$KB" == "layout:     us" ]]; then
+	setxkbmap br -v dvorak
+	dunstify -u low --replace=69 BR-DVORAK
+else
+	setxkbmap us
+	dunstify -u low --replace=69 US
+fi
+
