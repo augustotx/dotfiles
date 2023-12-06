@@ -507,3 +507,5 @@ c.colors.tabs.pinned.selected.even.fg = '#cdd6f4'
 # Background color of pinned selected even tabs.
 # Type: QtColor
 c.colors.tabs.pinned.selected.even.bg = '#585b70'
+
+# config.set("colors.webpage.darkmode.enabled", True)
