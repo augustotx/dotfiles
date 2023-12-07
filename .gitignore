@@ -1,2 +1,3 @@
 .config/micro/buffers/*
 .config/coc/extensions/node_modules/*
+.config/qutebrowser/bookmarks/urls
