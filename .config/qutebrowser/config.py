@@ -509,3 +509,4 @@ c.colors.tabs.pinned.selected.even.fg = '#cdd6f4'
 c.colors.tabs.pinned.selected.even.bg = '#585b70'
 
 # config.set("colors.webpage.darkmode.enabled", True)
+config.bind('<Escape>', 'mode-leave ;; jseval -q document.activeElement.blur()', mode='insert')
