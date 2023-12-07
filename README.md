@@ -9,7 +9,7 @@ To install them on Archlinux use this command (assuming you have yay installed):
 yay -Sy qt5ct qt6ct lightly-qt tela-icon-theme-git catppuccin-cursors-mocha catppuccin-gtk-theme-mocha nwg-look picom qutebrowser network-manager-applet pavucontrol pamixer dunst micro neovim btop
 ```
 <h2 align="center"> Installation </h2>
-To install it you can either just donwload the files and put them in their folders, ***OR*** you can use GNU Stow to properly install this repository.
+To install it you can either just donwload the files and put them in their folders, <b><i>OR</i></b> you can use GNU Stow to properly install this repository.
 
 ```bash
 yay -S stow git --needed
