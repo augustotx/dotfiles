@@ -6,5 +6,5 @@
 
 config_version: 2
 settings:
-  content.notifications.enabled:
-    https://lemmygrad.ml: true
+  content.media.audio_video_capture:
+    https://app.element.io: true

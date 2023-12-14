@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+# import passwords without labels from external file
+
+# Make sure the exported_passes file exists
+exported_passes_file="exported_passes"
+if [ ! -f "$exported_passes_file" ]; then
+    echo "Error: The exported_passes file does not exist."
+    exit 1
+fi
+
+# Read the file line by line
+while IFS= read -r line; do
+    # Check if the line contains "Name:" to identify the start of a new password entry
+    if [[ "$line" == "Name: "* ]]; then
+        # Extract the entry name
+        entry_name="${line#Name: }"
+        
+        # Read the next line, which contains the username
+        IFS= read -r username_line
+        username="${username_line#Username: }"
+
+        # Read the next line, which contains the password
+        IFS= read -r password_line
+        password="${password_line#Password: }"
+        
+        # Import the entry into the password store
+        echo -e "$username\n$password" | pass insert --multiline "$entry_name"
+    fi
+done < "$exported_passes_file"
+
+echo "Import completed."
