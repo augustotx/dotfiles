@@ -23,7 +23,6 @@ You're all set! Talk to me if you have any issues or want help with Linux.
 
 <h2 align="center"> Contact Me </h2>
 <p align="center">
-  <a href="https://mastodon.social/@augustotx"><img src="assets/social/macchiato_mastodon.svg" width="64" height="64" alt="Mastodon Logo"/></a>
-  <a href="https://reddit.com/u/AugustBrasilien"><img src="assets/social/macchiato_reddit.svg" width="64" height="64" alt="Reddit Logo"/></a>
-  <a href="https://lemmygrad.ml/u/augusto"><img src="assets/social/macchiato_lemmy.svg" width="64" height="64" alt="Lemmy Logo"/></a>
+    <a href="https://mastodon.social/@augustotx"><img src="assets/social/macchiato_mastodon.svg" width="64" height="64" alt="Mastodon Logo"/></a>
+    <a href="https://matrix.to/#/@augustotx:matrix.org"><img src="assets/social/macchiato_matrix.svg" width="64" height="64" alt="Matrix Logo"/></a>
 </p>
