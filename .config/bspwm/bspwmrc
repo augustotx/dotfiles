@@ -107,3 +107,5 @@ xsetroot -cursor_name left_ptr
 rofi-polkit-agent --theme ~/.config/rofi/catppuccin.rasi
 
 ksuperkey
+
+$HOME/.config/bspwm/mic-volume.sh & disown
