@@ -48,7 +48,7 @@ XF86MonBrightness{Up,Down}
 
 # screenshot
 Print
-    flameshot launcher
+    gnome-screenshot -i
 
 #
 #

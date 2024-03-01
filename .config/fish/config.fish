@@ -1,4 +1,4 @@
-#export $(dbus-launch)
+export $(dbus-launch)
 if status is-interactive
     # Commands to run in interactive sessions can go here
     set BAT_THEME "Catppuccin-mocha"
