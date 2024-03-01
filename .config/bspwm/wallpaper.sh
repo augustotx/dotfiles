@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ## Kill and start video background
-killall xwinwrap
+kill xwinwrap
 while pgrep -u $UID -x xwinwrap >/dev/null; do sleep 1; done
 xwinwrap -fs -fdt -ni -b -nf -- mpv --input-ipc-server=/tmp/mpvsocket --loop --mute --pause -wid WID ~/.config/bspwm/backgrounds/cat_aesthetic.mp4 &
 
