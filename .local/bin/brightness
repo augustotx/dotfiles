@@ -7,12 +7,12 @@ CARD=$(basename "$(find /sys/class/backlight/* | head -n 1)")
 
 # Get brightness
 get_backlight() {
-	if [[ "$CARD" == *"intel_"* ]]; then
-                BNESS=$(xbacklight -get)
-		LIGHT=${BNESS%.*}
-	else
+	#if [[ "$CARD" == *"intel_"* ]]; then
+        #        BNESS=$(xbacklight -get)
+	#	LIGHT=${BNESS%.*}
+	#else
                 LIGHT=$(printf '%s' "$(light -G)" | awk 'BEGIN {FS="."}{print $1}')
-	fi
+	#fi
 	echo "${LIGHT}%"
 }
 
@@ -33,20 +33,20 @@ get_icon() {
 
 # Increase brightness
 inc_backlight() {
-	if [[ "$CARD" == *"intel_"* ]]; then
-		xbacklight -inc 10 && get_icon && dunstify -u low --replace=69 -i "$icon" "Brightness : $(get_backlight)"
-	else
-		light -A 5 && get_icon && dunstify -u low --replace=69 -i "$icon" "Brightness : $(get_backlight)"
-	fi
+	#if [[ "$CARD" == *"intel_"* ]]; then
+	#	xbacklight -inc 10 && get_icon && dunstify -u low --replace=69 -i "$icon" "Brightness : $(get_backlight)"
+	#else
+		sudo light -A 10 #&& get_icon && dunstify -u low --replace=69 -i "$icon" "Brightness : $(get_backlight)"
+	#fi
 }
 
 # Decrease brightness
 dec_backlight() {
-	if [[ "$CARD" == *"intel_"* ]]; then
-		xbacklight -dec 10 && get_icon && dunstify -u low --replace=69 -i "$icon" "Brightness : $(get_backlight)"
-	else
-		light -U 5 && get_icon && dunstify -u low --replace=69 -i "$icon" "Brightness : $(get_backlight)"
-	fi
+	#if [[ "$CARD" == *"intel_"* ]]; then
+	#	xbacklight -dec 10 && get_icon && dunstify -u low --replace=69 -i "$icon" "Brightness : $(get_backlight)"
+	#else
+		sudo light -U 10 #&& get_icon && dunstify -u low --replace=69 -i "$icon" "Brightness : $(get_backlight)"
+	#fi
 }
 
 # Execute accordingly

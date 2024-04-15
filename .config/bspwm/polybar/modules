@@ -1,9 +1,9 @@
 
 [module/launcher]
 type=custom/text
-content =  
+content =  
 content-font = 2
-content-foreground= ${color.green}
+content-foreground= ${color.sky}
 content-transparent= ${color.transparent}
 content-padding = 1
 click-left=rofi -show drun

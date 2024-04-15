@@ -4,7 +4,7 @@
 ; Look for network: "ls -l /sys/class/net"
 
 [system]
-adapter = dc-charger
-battery = cw2015-battery
-graphics_card = edp-backlight
+adapter = ADP1
+battery = BAT1
+graphics_card = intel_backlight
 network_interface = wlan0

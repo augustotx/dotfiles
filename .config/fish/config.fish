@@ -1,4 +1,4 @@
-export $(dbus-launch)
+#export $(dbus-launch)
 if status is-interactive
     # Commands to run in interactive sessions can go here
     set BAT_THEME "Catppuccin-mocha"
@@ -13,10 +13,10 @@ if status is-interactive
     alias jctl="journalctl -p 3 -xb" #get the error messages from journalctl
     alias killp='killprocess'
     alias kp='killprocess'
-    alias l='eza -lahF --color=always --icons --sort=size --group-directories-first'
+    alias l='exa -lahF --color=always --icons --sort=size --group-directories-first'
     alias less='bat'
-    alias ls='eza -lhF --color=always --icons --sort=size --group-directories-first'
-    alias lst='eza -lahFT --color=always --icons --sort=size --group-directories-first'
+    alias ls='exa -lhF --color=always --icons --sort=size --group-directories-first'
+    alias lst='exa -lahFT --color=always --icons --sort=size --group-directories-first'
     alias mv='mv -i'
     alias pdw="pwd"
     alias wget="wget -c" # continue the download
