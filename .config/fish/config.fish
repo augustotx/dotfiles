@@ -20,7 +20,7 @@ if status is-interactive
     alias mv='mv -i'
     alias pdw="pwd"
     alias wget="wget -c" # continue the download
-    alias updatesys="yay --sudoloop && flatpak update"
+    alias updatesys="sudo xbps-install -Su && flatpak update"
     
     export VISUAL="gedit"
     export EDITOR="micro"

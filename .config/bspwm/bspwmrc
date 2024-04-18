@@ -4,8 +4,8 @@
 #xrandr --output DP-4 --mode 1920x1080 --rate 165
 
 pipewire &
-#pipewire-pulse &
-#wireplumber &
+# pipewire-pulse &
+# wireplumber &
 
 # music shit
 playerctld daemon
