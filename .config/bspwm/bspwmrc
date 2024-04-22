@@ -11,7 +11,7 @@ pipewire &
 playerctld daemon
 
 # wallpaper
-feh --bg-scale $HOME/.config/bspwm/backgrounds/space.png
+feh --bg-scale $HOME/.config/bspwm/backgrounds/Flag_of_Soviet_Brazil.png
 #bash ~/.config/bspwm/wallpaper.sh &
 
 pgrep -x sxhkd > /dev/null || sxhkd &
