@@ -1,7 +1,7 @@
 #! /bin/sh
 
 # xrandr
-#xrandr --output DP-4 --mode 1920x1080 --rate 165
+# xrandr --output DP-4 --mode 1920x1080 --rate 165
 
 pipewire &
 # pipewire-pulse &
@@ -11,12 +11,14 @@ pipewire &
 playerctld daemon
 
 # wallpaper
-feh --bg-scale $HOME/.config/bspwm/backgrounds/space.png
+# feh --no-fehbg --bg-fill .config/bspwm/backgrounds/space.jpg
+feh --no-fehbg --bg-fill .config/bspwm/backgrounds/Flag_of_Soviet_Brazil_MultiMonitor.png --no-xinerama # multimonitor wallpaper
 #bash ~/.config/bspwm/wallpaper.sh &
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-bspc monitor -d 1 2 3 4 5 6
+bspc monitor DP-4 -d 1 2 3 4 5
+bspc monitor HDMI-0 -d 0 9 8 7 6
 
 bspc config border_width         2
 bspc config window_gap           0
