@@ -6,7 +6,6 @@ include-file = $HOME/.config/bspwm/polybar/system
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
 [bar/mainbar]
-monitor = DP-4
 wm-restack = bspwm
 bottom = true
 fixed-center = true

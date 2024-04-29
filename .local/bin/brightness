@@ -36,7 +36,7 @@ inc_backlight() {
 	if [[ "$CARD" == *"intel_"* ]]; then
 		xbacklight -inc 10 && get_icon && dunstify -u low --replace=69 -i "$icon" "Brightness : $(get_backlight)"
 	else
-		light -A 5 && get_icon && dunstify -u low --replace=69 -i "$icon" "Brightness : $(get_backlight)"
+		sudo light -A 5 && get_icon && dunstify -u low --replace=69 -i "$icon" "Brightness : $(get_backlight)"
 	fi
 }
 
@@ -45,7 +45,7 @@ dec_backlight() {
 	if [[ "$CARD" == *"intel_"* ]]; then
 		xbacklight -dec 10 && get_icon && dunstify -u low --replace=69 -i "$icon" "Brightness : $(get_backlight)"
 	else
-		light -U 5 && get_icon && dunstify -u low --replace=69 -i "$icon" "Brightness : $(get_backlight)"
+		sudo light -U 5 && get_icon && dunstify -u low --replace=69 -i "$icon" "Brightness : $(get_backlight)"
 	fi
 }
 
