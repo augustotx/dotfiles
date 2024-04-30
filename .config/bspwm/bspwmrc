@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /bin/bash
 
 # xrandr
 # xrandr --output DP-4 --mode 1920x1080 --rate 165
@@ -85,28 +85,28 @@ wmname LG3D
 export _JAVA_AWT_WM_NONREPARENTING=1
 
 # gnome-keyring
-gnome-keyring-daemon -s & xdo raise -N Polybar
+gnome-keyring-daemon -s & xdo raise -N Polybar 
 
 
 # polybar
-$HOME/.config/bspwm/polybar/launch.sh
+$HOME/.config/bspwm/polybar/launch.sh &
 
 setxkbmap br
 
-xhost + local:
+xhost + local: &
 
 export $(dbus-launch)
-eval `dbus-launch --auto-syntax`
+eval `dbus-launch --auto-syntax` &
 
 # live wallpaper
 #bash /home/rex/.config/bspwm/wallpaper.sh
 
 # Fix cursor
-xsetroot -cursor_name left_ptr
+xsetroot -cursor_name left_ptr &
 
 # Polkit
-rofi-polkit-agent --theme ~/.config/rofi/catppuccin.rasi
+rofi-polkit-agent --theme ~/.config/rofi/catppuccin.rasi &
 
-ksuperkey
+ksuperkey &
 
-$HOME/.config/bspwm/keyboard-detect.sh & disown
+$HOME/.config/bspwm/keyboard-detect.sh
