@@ -12,7 +12,7 @@ super + q
 
 # Launch Terminal
 super + Return
-    kitty
+    st
 
 # Change Keyboard Layout
 ctrl + super + shift + k

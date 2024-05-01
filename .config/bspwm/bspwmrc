@@ -18,7 +18,7 @@ feh --no-fehbg --bg-fill .config/bspwm/backgrounds/Flag_of_Soviet_Brazil_MultiMo
 pgrep -x sxhkd > /dev/null || sxhkd &
 
 bspc monitor DP-4 -d 1 2 3 4 5
-bspc monitor HDMI-0 -d 0 9 8 7 6
+bspc monitor HDMI-0 -d 6 7 8 9 0
 
 bspc config border_width         2
 bspc config window_gap           0
