@@ -21,7 +21,7 @@ if status is-interactive
     alias pdw="pwd"
     alias wget="wget -c" # continue the download
     alias updatesys="sudo xbps-install -Su && flatpak update"
-    
+    alias neofetch="fastfetch"
     export VISUAL="gedit"
     export EDITOR="micro"
     export PATH="$PATH:/home/rex/.local/bin/"
