@@ -1,9 +1,9 @@
 
 [module/launcher]
 type=custom/text
-content =  
+content = 󱢇 
 content-font = 2
-content-foreground= ${color.green}
+content-foreground= ${color.red}
 content-transparent= ${color.transparent}
 content-padding = 1
 click-left=rofi -show drun
@@ -12,7 +12,7 @@ click-left=rofi -show drun
 type = internal/cpu
 interval = 2
 format = <label>
-format-foreground= ${color.maroon}
+format-foreground= ${color.blue}
 format-transparent= ${color.transparent}
 format-prefix = " "
 format-padding = 1
