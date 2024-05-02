@@ -28,11 +28,11 @@
         },
         {
             "type": "custom",
-            "format": "I believe in only one thing, the power of human will."
+            "format": "    \"I believe in only one thing, the power of human will.\""
         },
         {
             "type": "custom",
-            "format": "\u001b[31m~ Joseph Stalin"
+            "format": "                       \u001b[31m~ Joseph Stalin"
         },
         {
             "type": "custom",
@@ -159,15 +159,15 @@
         },
         {
             "type": "custom",
-            "format": "The production of too many useful things results in too many"
+            "format": "       \"The production of too many useful things results"
         },
         {
             "type": "custom",
-            "format": "useless people."
+            "format": "                   in too many useless people.\""
         },
         {
             "type": "custom",
-            "format": "\u001b[31m~ Karl Marx"
+            "format": "                         \u001b[31m~ Karl Marx"
         },
         {
             "type": "custom",
