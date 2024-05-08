@@ -1,14 +1,9 @@
-#! /bin/sh
-
+#!/bin/bash
 # xrandr
 # xrandr --output DP-4 --mode 1920x1080 --rate 165
 
 pipewire &
-# pipewire-pulse &
-# wireplumber &
 
-# music shit
-playerctld daemon
 
 # wallpaper
 # feh --no-fehbg --bg-fill .config/bspwm/backgrounds/space.jpg
@@ -37,10 +32,10 @@ bspc config single_monocle        false
 xsetroot -cursor_name left_ptr
 
 # floating windows
-#declare -a floats=(Alafloat Lxappearance Arandr \
-#Viewnior Pcmanfm feh Nm-connection-editor Matplotlib Yad)
-#for i in ${floats[@]}; do
-#  bspc rule -a $i state=floating follow=on focus=on; done
+declare -a floats=(Alafloat Lxappearance Arandr \
+Viewnior Pcmanfm feh Nm-connection-editor Matplotlib Yadi crypto-java-CryptoJava)
+for i in ${floats[@]}; do
+  bspc rule -a $i state=floating follow=on focus=on; done
 
 ## Autostart
 
@@ -110,4 +105,4 @@ rofi-polkit-agent --theme ~/.config/rofi/catppuccin.rasi
 
 ksuperkey
 
-$HOME/.config/bspwm/mic-volume.sh & disown
+exec $HOME/.config/bspwm/mic-volume.sh & disown
