@@ -1,4 +1,6 @@
 export $(dbus-launch)
+export UNPKG_ROOT="$HOME/.unpkg"
+export UNPKG_CACHE="$UNPKG_ROOT/unpkg/cache"
 if status is-interactive
     # Commands to run in interactive sessions can go here
     set BAT_THEME "Catppuccin-mocha"
@@ -24,6 +26,6 @@ if status is-interactive
     alias neofetch="fastfetch"
     export VISUAL="gedit"
     export EDITOR="micro"
-    export PATH="$PATH:/home/rex/.local/bin/"
+    export PATH="$PATH:/home/rex/.local/bin/:/home/rex/.unpkg/bin/"
     
 end
