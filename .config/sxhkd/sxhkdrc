@@ -12,11 +12,7 @@ super + q
 
 # Launch Terminal
 super + Return
-    st
-
-# Change Keyboard Layout
-ctrl + super + shift + k
-	$HOME/.local/bin/keyboard
+    $UNPKG_ROOT/bin/st
 
 # Launch Nemo
 super + e
