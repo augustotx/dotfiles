@@ -2,11 +2,11 @@
 # xrandr
 # xrandr --output DP-4 --mode 1920x1080 --rate 165
 
-pipewire &
-
+# pipewire &
+pulseaudio &
 
 # wallpaper
-feh --no-fehbg --bg-fill $HOME/.config/bspwm/backgrounds/jw_galaxy_flag.jpg
+feh --no-fehbg --bg-fill $HOME/.config/bspwm/backgrounds/jw_galaxy_flat.jpg
 #bash ~/.config/bspwm/wallpaper.sh &
 
 pgrep -x sxhkd > /dev/null || sxhkd &
