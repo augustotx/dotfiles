@@ -12,7 +12,7 @@ super + q
 
 # Launch Terminal
 super + Return
-    $UNPKG_ROOT/bin/st
+    st
 
 # Launch Nemo
 super + e

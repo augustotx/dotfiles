@@ -11,7 +11,7 @@ wm-restack = bspwm
 bottom = true
 fixed-center = true
 enable-ipc = true
-background = ${color.background}
+background = ${color.transparent}
 foreground = ${color.foreground}
 radius = 0
 font-0 = "JetBrains Mono:size=10.5;3"
@@ -22,12 +22,12 @@ modules-right= battery volume brightness my-text-label bspwm
 height = 30
 width = 100%
 border-size = 4
-border-color = ${color.background}
+border-color = ${color.transparent}
 line-size = 2
 offset-x = 0%
 offset-y = 0%
 tray-position = right
-tray-background = ${color.background}
+tray-background = ${color.transparent}
 
 [bar/rightbar]
 monitor = HDMI-0
@@ -35,7 +35,7 @@ wm-restack = bspwm
 bottom = false
 fixed-center = true
 enable-ipc = true
-background = ${color.background}
+background = ${color.transparent}
 foreground = ${color.foreground}
 radius = 0
 font-0 = "JetBrains Mono:size=10.5;3"
@@ -46,7 +46,7 @@ modules-right= battery volume brightness my-text-label bspwm
 height = 30
 width = 100%
 border-size = 4
-border-color = ${color.background}
+border-color = ${color.transparent}
 line-size = 2
 offset-x = 0%
 offset-y = 0%

@@ -6,8 +6,7 @@ pipewire &
 
 
 # wallpaper
-# feh --no-fehbg --bg-fill .config/bspwm/backgrounds/space.jpg
-feh --no-fehbg --bg-fill .config/bspwm/backgrounds/Flag_of_Soviet_Brazil_MultiMonitor.png --no-xinerama # multimonitor wallpaper
+feh --no-fehbg --bg-fill $HOME/.config/bspwm/backgrounds/jw_galaxy_flag.jpg
 #bash ~/.config/bspwm/wallpaper.sh &
 
 pgrep -x sxhkd > /dev/null || sxhkd &

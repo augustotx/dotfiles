@@ -66,9 +66,9 @@ argument_parser.add_argument('--mode', '-M', choices=['pass', 'gopass'], default
                              help='Select mode [gopass] to use gopass instead of the standard pass.')
 argument_parser.add_argument('--prefix', type=str,
                              help='Search only the given subfolder of the store (only used in gopass-mode)')
-argument_parser.add_argument('--username-pattern', '-u', default=r'.*/(.+)',
+argument_parser.add_argument('--username-pattern', '-u', default=r'(.+)',
                              help='Regular expression that matches the username')
-argument_parser.add_argument('--username-target', '-U', choices=['path', 'secret'], default='path',
+argument_parser.add_argument('--username-target', '-U', choices=['path', 'secret'], default='secret',
                              help='The target for the username regular expression')
 argument_parser.add_argument('--password-pattern', '-P', default=r'(.*)',
                              help='Regular expression that matches the password')
