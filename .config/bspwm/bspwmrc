@@ -6,7 +6,7 @@
 pulseaudio &
 
 # wallpaper
-feh --no-fehbg --bg-fill $HOME/.config/bspwm/backgrounds/jw_galaxy_flat.jpg
+feh --no-fehbg --bg-fill $HOME/.config/bspwm/backgrounds/jw_galaxy.png
 #bash ~/.config/bspwm/wallpaper.sh &
 
 pgrep -x sxhkd > /dev/null || sxhkd &
