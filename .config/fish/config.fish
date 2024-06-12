@@ -3,7 +3,6 @@ export UNPKG_ROOT="$HOME/.unpkg"
 export UNPKG_CACHE="$UNPKG_ROOT/unpkg/cache"
 if status is-interactive
     # Commands to run in interactive sessions can go here
-    set BAT_THEME "Catppuccin-mocha"
     set fish_greeting ""
 
     #aliases
@@ -12,9 +11,6 @@ if status is-interactive
     alias egrep='egrep --color=auto'
     alias fgrep='fgrep --color=auto'
     alias grep='grep --color=auto'
-    alias jctl="journalctl -p 3 -xb" #get the error messages from journalctl
-    alias killp='killprocess'
-    alias kp='killprocess'
     alias l='eza -lahF --color=always --icons --sort=size --group-directories-first'
     alias less='bat'
     alias ls='eza -lhF --color=always --icons --sort=size --group-directories-first'
@@ -25,7 +21,6 @@ if status is-interactive
     alias updatesys="sudo xbps-install -Su && flatpak update"
     alias neofetch="fastfetch"
     export VISUAL="gedit"
-    export EDITOR="micro"
+    export EDITOR="nvim"
     export PATH="$PATH:/home/rex/.local/bin/:/home/rex/.unpkg/bin/"
-    
 end

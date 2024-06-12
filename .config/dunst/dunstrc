@@ -13,7 +13,3 @@ foreground = "#D9E0EE"
 background = "#1E1E2E"
 foreground = "#D9E0EE"
 frame_color = "#F8BD96"
-
-[play_sound]
-summary = "*"
-script = "~/.config/dunst/notifsound.sh"
