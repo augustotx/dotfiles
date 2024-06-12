@@ -22,5 +22,5 @@ if status is-interactive
     alias neofetch="fastfetch"
     export VISUAL="gedit"
     export EDITOR="nvim"
-    export PATH="$PATH:/home/rex/.local/bin/:/home/rex/.unpkg/bin/"
+    export PATH="$PATH:/home/rex/.local/bin/:/home/rex/.unpkg/bin/:/home/rex/.cargo/bin"
 end
